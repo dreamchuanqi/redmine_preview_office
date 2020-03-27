@@ -1,7 +1,8 @@
 <%= render :layout => 'layouts/file' do %>
   <script type="text/javascript">  
 	function resizeObject(obj) {
-	 obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    // 测试现在的浏览器，不需要重新设置高度，可以正常显示，取消了高度的设定。
+    // obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	}
   </script>
   <%= preview_office_tag @attachment %>
